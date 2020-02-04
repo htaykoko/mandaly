@@ -18,6 +18,22 @@
                         <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
                         <span class="text">Phone: + 1235 2355 98</span>
                     </div>
+                    <div class="col-md pr-4 d-flex topper align-items-center">
+                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"></div>
+                        @if (Route::has('login'))
+                            <div class="top-right links">
+                                @auth
+                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                @endauth
+                            </div>
+                        @endif
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,6 +54,7 @@
                 <li class="nav-item"><a href="{{ route("pricing") }}" class="nav-link">Pricing</a></li>
                 <li class="nav-item"><a href="{{ route("blogs") }}" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="{{ route("contact") }}" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="{{ route("history") }}" class="nav-link">History</a></li>
             </ul>
         </div>
     </div>

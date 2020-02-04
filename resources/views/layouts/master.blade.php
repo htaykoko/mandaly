@@ -14,6 +14,8 @@
     <body>
   
         @include('layouts.navbar')
+
+        @include('layouts.message')
         
         @yield('content')
 

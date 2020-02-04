@@ -11,26 +11,29 @@
                 </div>
             </div>	
             <div class="row">
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch" style="background-image: url({{ asset('assets/images/doc-1.jpg') }});"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Dr. Lloyd Wilson</h3>
-                            <span class="position mb-2">Neurologist</span>
-                            <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                                </ul>
+                @foreach ($doctors as $doctor)
+                    <div class="col-md-6 col-lg-3 ftco-animate">
+                        <div class="staff">
+                            <div class="img-wrap d-flex align-items-stretch">
+                                <div class="img align-self-stretch" style="background-image: url({{ asset('assets/images/doc-1.jpg') }});"></div>
+                            </div>
+                            <div class="text pt-3 text-center">
+                                <h3>{{ $doctor->name }}</h3>
+                                <span class="position mb-2">{{ optional($doctor->specialist)->name }}</span>
+                                <div class="faded">
+                                    <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                                    <ul class="ftco-social text-center">
+                                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                        <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+                                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
+                
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
