@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use App\Doctor;
 use Illuminate\Http\Request;
 
@@ -40,7 +41,7 @@ class HomeController extends Controller
 
     public function services()
     {
-        return view('home');
+        return view('services');
     }
 
     public function contact()
@@ -48,19 +49,9 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function blogs()
-    {
-        return view('blogs');
-    }
-
     public function pricing()
     {
         return view('pricing');
-    }
-
-    public function appointment()
-    {
-        return view('appointments');
     }
 
     public function history()

@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-lg-10 p-3 mb-2 bg-secondary text-white text-center">Create Doctor</div>
                 <div class="col-md-10">
-                    <form action="{{ route('admin.doctors.store') }}" class="ftco-animate" method="POST">
+                    <form action="{{ route('admin.doctors.store') }}" class="ftco-animate" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('POST')
                         <div class="d-md-flex">
@@ -65,6 +65,14 @@
                                 <div class="input-wrap">
                                     <div class="icon"><span class="ion-ios-clock"></span></div>
                                     <input type="text" class="form-control appointment_time" placeholder="End Time" name="end_time" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group">
+                                <div class="input-wrap">
+                                    <div class="icon"><span class="ion-ios-image"></span></div>
+                                    <input type="file" class="form-control" name="image_name">
                                 </div>
                             </div>
                         </div>

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Blog;
+use App\Appointment;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class AppointmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        
-        $blogs = Blog::paginate(20);
-
-        return view('blogs', compact('blogs'));
+        $appointments = Appointment::orderBy('appointment_date', 'desc')->paginate(20);
+        return view('admin.appointments.index', compact('appointments'));
     }
 
     /**
@@ -44,21 +43,21 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Blog  $blog
+     * @param  \App\Appointment  $appointment
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    public function show(Appointment $appointment)
     {
-        return view('blog_single', compact('blog'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Blog  $blog
+     * @param  \App\Appointment  $appointment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit(Appointment $appointment)
     {
         //
     }
@@ -67,10 +66,10 @@ class BlogController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Blog  $blog
+     * @param  \App\Appointment  $appointment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $blog)
+    public function update(Request $request, Appointment $appointment)
     {
         //
     }
@@ -78,10 +77,10 @@ class BlogController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Blog  $blog
+     * @param  \App\Appointment  $appointment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Blog $blog)
+    public function destroy(Appointment $appointment)
     {
         //
     }

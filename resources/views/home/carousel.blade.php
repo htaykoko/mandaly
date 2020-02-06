@@ -6,7 +6,7 @@
                 <div class="col-md-6 text ftco-animate">
                     <h1 class="mb-4">Helping Your <span>Stay Happy One</span></h1>
                     <h3 class="subheading">Everyday We Bring Hope and Smile to the Patient We Serve</h3>
-                    <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p>
+                    {{-- <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> --}}
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                 <div class="col-md-6 text ftco-animate">
                     <h1 class="mb-4">We Care <span>About Your Health</span></h1>
                     <h3 class="subheading">Your Health is Our Top Priority with Comprehensive, Affordable medical.</h3>
-                    <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p>
+                    {{-- <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p> --}}
                 </div>
             </div>
         </div>

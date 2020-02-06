@@ -16,7 +16,7 @@
                     <div class="col-lg-6">
                         <a href="{{route('admin.doctors.index')}}">
                             <div class="services-2 d-flex">
-                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="icon-user-md"></span></div>
                                 <div class="text">
                                     <h3>Doctors</h3>
                                     <p>Go to Doctor listing page to create, update and delete.</p>
@@ -25,9 +25,9 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a href="{{route('admin.doctors.index')}}">
+                        <a href="{{route('admin.appointments.index')}}">
                             <div class="services-2 d-flex">
-                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="icon-send-o"></span></div>
                                 <div class="text">
                                     <h3>Appointments</h3>
                                     <p>Let check appointment list.</p>
@@ -39,7 +39,7 @@
                     <div class="col-lg-6">
                         <a href="{{route('admin.specialist.index')}}">
                             <div class="services-2 d-flex">
-                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
                                 <div class="text">
                                     <h3>Specialist List</h3>
                                     <p>Specialist List By Physicians. Go to Specialist listing page to create, update and delete.</p>
@@ -48,14 +48,16 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <div class="services-2 d-flex">
-                            <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
-                                <div class="text">
-                                    <h3>Heart Rate</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        <a href="{{route('admin.blogs.index')}}">
+                            <div class="services-2 d-flex">
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="icon-newspaper-o"></span></div>
+                                    <div class="text">
+                                        <h3>Blogs</h3>
+                                        <p>This is News, Event or Post, Go to this page to create, update and delete.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

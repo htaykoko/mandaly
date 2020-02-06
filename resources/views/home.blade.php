@@ -7,7 +7,7 @@
         @include('home.carousel')
 
         {{-- services --}}
-        @include('home.about')
+        {{-- @include('home.about') --}}
             
         {{-- free consultation --}}
         <section class="ftco-intro" style="background-image: url({{ asset('assets/images/bg_3.jpg') }});" data-stellar-background-ratio="0.5">
@@ -166,7 +166,7 @@
         {{-- blogs --}}
         <section class="ftco-section bg-light">
             <div class="container">
-                <a href="{{ route("blogs") }}">
+                <a href="{{ route("blogs.index") }}">
                     <div class="row justify-content-center mb-5 pb-2">
                         <div class="col-md-8 text-center heading-section ftco-animate">
                             <span class="subheading">Blog</span>

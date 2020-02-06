@@ -15,7 +15,7 @@
                     <div class="col-md-6 col-lg-3 ftco-animate">
                         <div class="staff">
                             <div class="img-wrap d-flex align-items-stretch">
-                                <div class="img align-self-stretch" style="background-image: url({{ asset('assets/images/doc-1.jpg') }});"></div>
+                                <div class="img align-self-stretch" style="background-image: url({{ url("storage/doctors/".$doctor->image_name) }});"></div>
                             </div>
                             <div class="text pt-3 text-center">
                                 <h3>{{ $doctor->name }}</h3>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
             <div class="col-lg-2 pr-4 align-items-center">
-                <a class="navbar-brand" href="{{ route("home") }}">Mandalay</a>
+                <a class="navbar-brand" href="{{ route("home") }}">Mandalay<br><span>Hospital</span></a>
             </div>
             <div class="col-lg-10 d-none d-md-block">
                 <div class="row d-flex">
@@ -52,7 +52,7 @@
                 <li class="nav-item"><a href="{{ route("doctors") }}" class="nav-link">Doctor</a></li>
                 <li class="nav-item"><a href="{{ route("services") }}" class="nav-link">Service</a></li>
                 <li class="nav-item"><a href="{{ route("pricing") }}" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="{{ route("blogs") }}" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="{{ route("blogs.index") }}" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="{{ route("contact") }}" class="nav-link">Contact</a></li>
                 <li class="nav-item"><a href="{{ route("history") }}" class="nav-link">History</a></li>
             </ul>

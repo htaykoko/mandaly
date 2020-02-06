@@ -35,7 +35,7 @@
                         <li class="nav-item"><a href="{{ route("doctors") }}" class="nav-link">Doctor</a></li>
                         <li class="nav-item"><a href="{{ route("services") }}" class="nav-link">Service</a></li>
                         <li class="nav-item"><a href="{{ route("pricing") }}" class="nav-link">Pricing</a></li>
-                        <li class="nav-item"><a href="{{ route("blogs") }}" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="{{ route("blogs.index") }}" class="nav-link">Blog</a></li>
                         <li class="nav-item"><a href="{{ route("contact") }}" class="nav-link">Contact</a></li>
                         <li class="nav-item"><a href="{{ route("history") }}" class="nav-link">History</a></li>
                     </ul>

@@ -21,10 +21,11 @@ class CreateBlogsTable extends Migration
             $table->string('title_image')->nullable();
             $table->string('file_name')->nullable();
             $table->string('path')->nullable();
+            $table->integer('specialist_id')->nullable();
 
             $table->integer('view_count')->nullable();
-            $table->smallInteger('created_by');
-            $table->smallInteger('updated_by');
+            $table->smallInteger('created_by')->nullable();
+            $table->smallInteger('updated_by')->nullable();
             $table->timestamps();
         });
     }

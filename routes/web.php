@@ -1,16 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
@@ -25,13 +14,15 @@ Route::get('/services', 'HomeController@services')->name('services');
 
 Route::get('/contact', 'HomeController@contact')->name('contact');
 
-Route::get('/blogs', 'HomeController@blogs')->name('blogs');
+Route::resource('blogs', 'BlogController');
 
 Route::get('/pricing', 'HomeController@pricing')->name('pricing');
 
 Route::get('/history', 'HomeController@history')->name('history');
 
-Route::get('/appointment', 'HomeController@appointment')->name('appointment');
+Route::get('/appointment', 'AppointmentController@index')->name('appointment');
+
+Route::post('/appointment', 'AppointmentController@store')->name('appointments.store');
 
 // admin page
 Route::middleware(['auth'])->prefix('admin')->group(function () {
@@ -41,5 +32,9 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::resource('doctors', 'Admin\DoctorController', ['as' => 'admin']);
 
     Route::resource('specialist', 'Admin\SpecialistController', ['as' => 'admin']);
+
+    Route::resource('blogs', 'Admin\BlogController', ['as' => 'admin']);
+
+    Route::resource('appointments', 'Admin\AppointmentController', ['as' => 'admin']);
 
 });

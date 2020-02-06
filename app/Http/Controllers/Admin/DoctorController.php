@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\DoctorRequest;
 use App\Specialist;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class DoctorController extends Controller
 {
@@ -49,7 +50,20 @@ class DoctorController extends Controller
 
         $data['licence_expired_date'] = date("Y-m-d", strtotime($request->licence_expired_date)); //set value again 
 
-        Doctor::create($data);
+        $doctor = Doctor::create($data);
+
+        if(!empty(request()->image_name))
+        {
+            $file = request()->image_name;
+
+            $file_name = time().'.'.$file->getClientOriginalExtension();
+
+            $data['image_name'] = $file_name;
+
+            $data['image_path'] = $file->storeAs('public/doctors', $file_name);
+
+            $doctor->update($data);
+        }
 
         return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully inserted.');
 
@@ -98,6 +112,24 @@ class DoctorController extends Controller
 
         $doctor->update($data);
 
+        if(!empty(request()->image_name))
+        {
+            $file = "public/doctors/".$doctor->image_name;//get existing file path
+
+            Storage::delete($file);//delete existing file
+
+            $file = request()->image_name;
+
+            $file_name = time().'.'.$file->getClientOriginalExtension();//change file name
+
+            $data['image_name'] = $file_name;
+
+            $data['image_path'] = $file->storeAs('public/doctors', $file_name);//upload file to the server
+
+            $doctor->update($data);
+
+        }
+
         return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully updated.');
     }
 
@@ -110,6 +142,7 @@ class DoctorController extends Controller
     public function destroy(Doctor $doctor)
     {
         $doctor->delete();
+        
         return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully Deleted.');
 
     }
