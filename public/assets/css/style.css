@@ -9770,3 +9770,53 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* for date picker */
+  .ui-timepicker-wrapper {
+    overflow-y: auto;
+    max-height: 150px;
+    width: 6.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    outline: none;
+    z-index: 10001;
+    margin: 0;
+  }
+
+  .datepicker.dropdown-menu th, .datepicker.dropdown-menu td {
+    padding: 4px 5px;
+  }
+
+  .datepicker td, .datepicker th {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+    background: #eeeeee;
+    cursor: pointer;
+  }
+
+  /* for time picker */
+  .ui-timepicker-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ui-timepicker-list li {
+    padding: 3px 0 3px 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #000;
+    list-style: none;
+    margin: 0;
+}

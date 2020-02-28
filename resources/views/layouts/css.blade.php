@@ -11,9 +11,9 @@
         <link rel="stylesheet" href={{ asset("assets/css/magnific-popup.css") }}>
         <link rel="stylesheet" href={{ asset("assets/css/open-iconic-bootstrap.min.css") }}>
         <link rel="stylesheet" href={{ asset("assets/css/owl.theme.default.min.css") }}>
-        <link rel="stylesheet" href={{ asset("assets/css/bootstrap-datepicker.css") }}> 
         <link rel="stylesheet" href={{ asset("assets/css/aos.css") }}>    
         <link rel="stylesheet" href={{ asset("assets/css/jquery.timepicker.css") }}>
+        <link rel="stylesheet" href={{ asset("assets/css/bootstrap-datepicker.css") }}> 
         
     --}}
 
