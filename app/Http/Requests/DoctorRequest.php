@@ -35,6 +35,7 @@ class DoctorRequest extends FormRequest
             'image_path' => ['nullable'],
             'age' => ['required', 'integer'],
             'specialist_id' => ['required', 'integer'],
+            'remark' => ['nullable']
         ];
     }
 }

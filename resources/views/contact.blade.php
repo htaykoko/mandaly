@@ -15,7 +15,7 @@
         </div>
     </section>
     
-    <div class="container">
+    {{-- <div class="container">
         <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
             <div class="container">
                 <div class="row d-flex align-items-stretch no-gutters">
@@ -38,12 +38,12 @@
                             </div>
                         </form>
                     </div>
-                    {{-- <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="col-md-6 d-flex align-items-stretch">
                         <div id="map"></div>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
             
         <section class="ftco-section contact-section">
             <div class="container">
@@ -80,6 +80,6 @@
     
 @endsection
 
-@section('js_file')
+{{-- @section('js_file')
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-@endsection
+@endsection --}}

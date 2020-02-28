@@ -77,18 +77,27 @@
                             </div>
                         </div>
                         <div class="d-md-flex">
-                            <div class="form-group">
-                                <div class="select-wrap">
-                                    <select name="specialist_id" id="" class="form-control">
-                                        @foreach ($specialists as $specialist)
-                                            <option value="{{$specialist->id}}" >{{$specialist->name}}</option>
-                                        @endforeach
-                                    </select>
+                            <select name="specialist_id" id="" class="form-control col-md-9">
+                                <option value="">Select specialist</option>
+                                @foreach ($specialists as $specialist)
+                                    <option value="{{$specialist->id}}" >{{$specialist->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <div class="icon"><span class="ion-ios-text"></span></div>
+                                    <div class="select-wrap">
+                                        <textarea name="remark" id="" cols="30" rows="5" class="form-control" placeholder="remark"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group ml-md-4">
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group ml-md-4 justify-content-center">
                                 <div class="input-wrap">
-                                    <input type="submit" value="Create" class="btn btn-secondary py-3 px-4">
+                                    <input type="submit" value="Create" class="btn btn-secondary px-4 py-2">
                                 </div>
                             </div>
                         </div>

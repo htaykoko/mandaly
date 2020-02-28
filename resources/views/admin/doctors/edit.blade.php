@@ -93,6 +93,18 @@
                                     <input type="number" class="form-control" placeholder="Age" name="age" min="0" value="{{ old('age') ? old('age') : $doctor->age }}">
                                 </div>
                             </div>
+                        </div>
+                        <div class="d-md-flex">
+                            <div class="form-group row">
+                                <div class="col-md-10">
+                                    <div class="icon"><span class="ion-ios-text"></span></div>
+                                    <div class="select-wrap">
+                                        <textarea name="remark" id="" cols="30" rows="5" class="form-control">{{ $doctor->remark }}</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex">
                             <div class="form-group ml-md-4">
                                 <input type="submit" value="Update" class="btn btn-secondary py-3 px-4">
                             </div>

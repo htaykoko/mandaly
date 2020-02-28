@@ -8,6 +8,7 @@ use App\Http\Requests\DoctorRequest;
 use App\Specialist;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image;
 
 class DoctorController extends Controller
 {
@@ -52,17 +53,20 @@ class DoctorController extends Controller
 
         $doctor = Doctor::create($data);
 
-        if(!empty(request()->image_name))
-        {
-            $file = request()->image_name;
+        if (request('image_name')) {
 
-            $file_name = time().'.'.$file->getClientOriginalExtension();
+            $imagePath = request('image_name')->store('doctors', 'public');
 
-            $data['image_name'] = $file_name;
+            $image = Image::make(public_path("storage/{$imagePath}"))->fit(700, 700);
+            
+            // $image->save();
 
-            $data['image_path'] = $file->storeAs('public/doctors', $file_name);
+            $imageArray = ['image_path' => $imagePath, 'image_name' => $image];
 
-            $doctor->update($data);
+            $imageArray = array_merge($imageArray, ['image_name' => $image->basename]);
+
+            $doctor->update($imageArray);
+
         }
 
         return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully inserted.');
@@ -110,25 +114,27 @@ class DoctorController extends Controller
 
         $data['licence_expired_date'] = date("Y-m-d", strtotime($request->licence_expired_date)); //set value again 
 
-        $doctor->update($data);
+        if (request('image_name')) {
 
-        if(!empty(request()->image_name))
-        {
             $file = "public/doctors/".$doctor->image_name;//get existing file path
 
             Storage::delete($file);//delete existing file
 
-            $file = request()->image_name;
+            $imagePath = request('image_name')->store('doctors', 'public');
 
-            $file_name = time().'.'.$file->getClientOriginalExtension();//change file name
+            $image = Image::make(public_path("storage/{$imagePath}"))->fit(300, 300);
+            
+            $image->save();
 
-            $data['image_name'] = $file_name;
+            $imageArray = ['image_path' => $imagePath];
 
-            $data['image_path'] = $file->storeAs('public/doctors', $file_name);//upload file to the server
-
-            $doctor->update($data);
-
+            $imageArray = array_merge($imageArray, ['image_name' => $image->basename]);
         }
+
+        $doctor->update(array_merge(
+            $data,
+            $imageArray ?? []
+        ));
 
         return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully updated.');
     }
@@ -141,6 +147,13 @@ class DoctorController extends Controller
      */
     public function destroy(Doctor $doctor)
     {
+        if($doctor->image_name)
+        {
+            $file = "public/{$doctor->image_path}";//get existing file path
+
+            Storage::delete($file);//delete existing file
+        }
+
         $doctor->delete();
         
         return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully Deleted.');

@@ -18,11 +18,12 @@
                         <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
                         <span class="text">Phone: + 1235 2355 98</span>
                     </div>
-                    <div class="col-md pr-4 d-flex topper align-items-center">
-                        <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"></div>
-                        @if (Route::has('login'))
-                            <div class="top-right links">
-                                @auth
+                    @if (Route::has('login'))
+                        @auth
+                            <div class="col-md pr-4 d-flex topper align-items-center">
+                                <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-user"></span></div>
+                                
+                                <div class="top-right links">
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
@@ -30,10 +31,10 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                                @endauth
+                                </div>
                             </div>
-                        @endif
-                    </div>
+                        @endauth
+                    @endif
                 </div>
             </div>
         </div>

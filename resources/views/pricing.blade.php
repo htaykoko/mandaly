@@ -3,13 +3,13 @@
 @section('content')
 	
 
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+	<section class="hero-wrap hero-wrap-2" style="background-image: url({{ asset('assets/images/bg_1.jpg') }});" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-center justify-content-center">
 				<div class="col-md-9 ftco-animate text-center">
 					<h1 class="mb-2 bread">Pricing</h1>
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Pricing <i class="ion-ios-arrow-forward"></i></span></p>
+					<p class="breadcrumbs"><span class="mr-2"><a href="{{ route('home') }}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Pricing <i class="ion-ios-arrow-forward"></i></span></p>
 				</div>
 			</div>
 		</div>
@@ -17,7 +17,7 @@
 	<div class="container">		
 		<section class="ftco-section ftco-departments bg-light">
 			<div class="container">
-				<div class="row departments p-5 mb-5 bg-white">
+				{{-- <div class="row departments p-5 mb-5 bg-white">
 					<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
 						<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-3.jpg);"></div>
 					</div>
@@ -63,7 +63,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 				<div class="row justify-content-center my-5 pb-2">
 					<div class="col-md-8 text-center heading-section ftco-animate">
 						<span class="subheading">Pricing</span>
@@ -72,68 +72,65 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3 ftco-animate">
+					<div class="col-md-6 ftco-animate mb-5">
 						<div class="pricing-entry pb-5 text-center">
 							<div>
 								<h3 class="mb-4">Basic</h3>
 								<p><span class="price">$24.50</span> <span class="per">/ session</span></p>
 							</div>
-							<ul>
-								<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-							</ul>
-								<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+							<span class="block-25" style="background-image: url({{ asset('assets/images/image_1.jpg') }});"></span>
+							{{-- <p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
 						</div>
 					</div>
-					<div class="col-md-3 ftco-animate">
+					<div class="col-md-6 ftco-animate mb-5">
 						<div class="pricing-entry pb-5 text-center">
 							<div>
 								<h3 class="mb-4">Standard</h3>
 								<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
 							</div>
-							<ul>
+							<span class="block-25" style="background-image: url({{ asset('assets/images/image_2.jpg') }});"></span>
+							{{--<ul>
 								<li>Diagnostic Services</li>
 								<li>Professional Consultation</li>
 								<li>Tooth Implants</li>
 								<li>Surgical Extractions</li>
 								<li>Teeth Whitening</li>
 							</ul>
-							<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+							 <p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
 						</div>
 					</div>
-					<div class="col-md-3 ftco-animate">
+					<div class="col-md-6 ftco-animate">
 						<div class="pricing-entry active pb-5 text-center">
 							<div>
 								<h3 class="mb-4">Premium</h3>
 								<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
 							</div>
-							<ul>
+							<span class="block-25" style="background-image: url({{ asset('assets/images/image_3.jpg') }});"></span>
+							{{--<ul>
 								<li>Diagnostic Services</li>
 								<li>Professional Consultation</li>
 								<li>Tooth Implants</li>
 								<li>Surgical Extractions</li>
 								<li>Teeth Whitening</li>
 							</ul>
-							<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+							<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
 						</div>
 					</div>
-					<div class="col-md-3 ftco-animate">
+					<div class="col-md-6 ftco-animate">
 						<div class="pricing-entry pb-5 text-center">
 							<div>
 								<h3 class="mb-4">Platinum</h3>
 								<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
 							</div>
-							<ul>
+							<span class="block-25" style="background-image: url({{ asset('assets/images/image_4.jpg') }});"></span>
+							{{-- <ul>
 								<li>Diagnostic Services</li>
 								<li>Professional Consultation</li>
 								<li>Tooth Implants</li>
 								<li>Surgical Extractions</li>
 								<li>Teeth Whitening</li>
 							</ul>
-							<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+							<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
 						</div>
 					</div>
 				</div>

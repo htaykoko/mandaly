@@ -7,8 +7,8 @@
         @include('home.carousel')
 
         {{-- services --}}
-        {{-- @include('home.about') --}}
-            
+        @include('home.about')
+        <br>
         {{-- free consultation --}}
         <section class="ftco-intro" style="background-image: url({{ asset('assets/images/bg_3.jpg') }});" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
@@ -20,7 +20,7 @@
                         <p></p>
                     </div>
                     <div class="col-md-3 d-flex align-items-center">
-                        <p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Free Consutation</a></p>
+                        <p class="mb-0"><a href="{{ route('appointment') }}" class="btn btn-secondary px-4 py-3">Free Consutation</a></p>
                     </div>
                 </div>
             </div>

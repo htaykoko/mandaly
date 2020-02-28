@@ -8,7 +8,7 @@
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
                     <h1 class="mb-2 bread">About Us</h1>
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="{{ route("home") }}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
                 </div>
             </div>
         </div>
@@ -70,24 +70,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-            
-        <section class="ftco-intro" style="background-image: url({{ asset('assets/images/bg_3.jpg') }});" data-stellar-background-ratio="0.5">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <h2>We Provide Free Health Care Consultation</h2>
-                        <p class="mb-0">Your Health is Our Top Priority with Comprehensive, Affordable medical.</p>
-                        <p></p>
-                    </div>
-                    <div class="col-md-3 d-flex align-items-center">
-                        <p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Free Consutation</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
+        </section>            
             
         <section class="ftco-section testimony-section bg-light">
             <div class="container">

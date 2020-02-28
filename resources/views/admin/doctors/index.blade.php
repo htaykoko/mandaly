@@ -14,7 +14,7 @@
                     <div class="card-header">
                         {{ __('Doctors List') }}
                         <span class="float-right">
-                            <button class="btn btn-success"><a href="{{ route("admin.doctors.create") }}"> + New</a></button>
+                            <button class="btn btn-success"><a href="{{ route("admin.doctors.create") }}" class="p-3 text-dark"> + New</a></button>
                         </span>
                     </div>
     
@@ -45,14 +45,14 @@
                                             <td>{{ $doctor->licence_no }}</td>
                                            
                                             <td>
-                                                <a href="{{ route("admin.doctors.edit", ["doctor" => $doctor]) }}" class="btn btn-md btn-info">Edit</a>
+                                                <a href="{{ route("admin.doctors.edit", ["doctor" => $doctor]) }}" class="btn btn-md btn-info px-3">Edit</a>
                                                 
                                             </td>
                                             <td>
                                                 <form action="{{ route("admin.doctors.destroy", ["doctor" => $doctor])}}" method="POST">
                                                     @csrf
                                                     @method("DELETE")
-                                                        <button class="btn btn-md btn-danger" onclick="return confirm('Are You Sure want to delete?')">Delete</button>
+                                                        <button class="btn btn-md btn-danger px-3" onclick="return confirm('Are You Sure want to delete?')">Delete</button>
                                                 </form>
                                             </td>
                                         </tr>

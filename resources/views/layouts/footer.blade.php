@@ -35,7 +35,7 @@
                     <li><a href="{{ route("contact") }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
                     </ul>
                 </div>
-                <div class="ftco-footer-widget mb-5 ml-md-4">
+                {{-- <div class="ftco-footer-widget mb-5 ml-md-4">
                     <h2 class="ftco-heading-2">Services</h2>
                     <ul class="list-unstyled">
                     <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Neurolgy</a></li>
@@ -44,7 +44,7 @@
                     <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Cardiology</a></li>
                     <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Surgery</a></li>
                     </ul>
-                </div>
+                </div> --}}
                 </div>
                 <div class="col-md">
                 <div class="ftco-footer-widget mb-5">
@@ -55,9 +55,9 @@
                         <a class="blog-img mr-4" style="background-image: url({{asset('assets/images/image_1.jpg')}});"></a>
                         <div class="text">
                             <h3 class="heading"><a href="{{ route('blogs.show', ['blog'=>$blog]) }}">{{ $blog->title }}</a></h3>
-                            <div class="meta">
+                            <div class="meta text-white">
                                 <div><span class="icon-calendar"></span> {{ date('M d, Y', strtotime($blog->date))}}</div>
-                                <div><span class="icon-person"></span> {{ $blog->created_by}}</div>
+                                <div><span class="icon-person"></span> {{ optional($blog->user)->name}}</div>
                                 {{-- <div><a href="#"><span class="icon-chat"></span> 19</a></div> --}}
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                         <h2 class="ftco-heading-2">Opening Hours</h2>
                         <h3 class="open-hours pl-4"><span class="ion-ios-time mr-3"></span>We are open 24/7</h3>
                     </div>
-                    <div class="ftco-footer-widget mb-5">
+                    {{-- <div class="ftco-footer-widget mb-5">
                         <h2 class="ftco-heading-2">Subscribe Us!</h2>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">
@@ -80,7 +80,7 @@
                                 <input type="submit" value="Subscribe" class="form-control submit px-3">
                             </div>
                         </form>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="row">

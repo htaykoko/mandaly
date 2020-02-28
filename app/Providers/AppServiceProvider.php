@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Blog;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -24,7 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        Schema::defaultStringLength(191);
+
         view()->composer(['layouts.footer'], function ($view) {
             $data = Blog::limit(2)->get();
             $view->with('blogs', $data);

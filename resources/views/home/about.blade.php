@@ -16,10 +16,10 @@
                 <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
                     <div class="media block-6 d-block text-center">
                         <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-ambulance"></span>
+                            <span class="flaticon-first-aid-kit"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Emergency Care</h3>
+                            <h3 class="heading">Internal Pharmacy</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
                     </div>    
@@ -49,7 +49,7 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section ftco-no-pt ftc-no-pb">
+    {{-- <section class="ftco-section ftco-no-pt ftc-no-pb">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url({{ asset('assets/images/about.jpg') }});">
@@ -105,4 +105,4 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
