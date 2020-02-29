@@ -8182,11 +8182,13 @@ h1, h2, h3, h4, h5,
 
 .navbar-brand {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 22px;
   padding: 0;
   line-height: 1; }
   .navbar-brand span {
     color: #2f89fc; }
+  .navbar-brand span.logo {
+    color: #ff8000; }
 
 .hero-wrap {
   width: 100%;
@@ -8978,9 +8980,11 @@ textarea.form-control {
       font-size: 22px;
       font-weight: 700; }
     .ftco-footer .ftco-footer-widget .logo {
-      color: #2f89fc; }
+      color: #fff; }
       .ftco-footer .ftco-footer-widget .logo span {
-        color: #ff8000; }
+        color: #2f89fc; }
+      .ftco-footer .footer-logo {
+        color: #ff8000 !important; }
     .ftco-footer .ftco-footer-widget ul li a span {
       color: #fff; }
     .ftco-footer .ftco-footer-widget .btn-primary {

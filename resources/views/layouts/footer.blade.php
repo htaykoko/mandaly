@@ -4,7 +4,7 @@
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-5">
-                        <h2 class="ftco-heading-2 logo">Mandalay<span>Hospital</span></h2>
+                        <h2 class="ftco-heading-2 logo">Mandalay<br><span class="footer-logo">Private General</span><br><span>Hospital</span></h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     </div>
                     <div class="ftco-footer-widget mb-5">
