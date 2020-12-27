@@ -30,11 +30,11 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="d-md-flex">
                             <div class="form-group">
                                 <div class="input-wrap">
-                                    <input type="submit" value="Update" class="btn btn-secondary py-3 px-4">
+                                    <input type="submit" value="Update" class="btn btn-secondary">
                                 </div>
                             </div>
                         </div>

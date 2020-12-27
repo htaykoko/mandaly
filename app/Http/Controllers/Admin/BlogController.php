@@ -18,7 +18,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::paginate(20);
+        $blogs = Blog::orderBy("id", "desc")->paginate(20);
         return view('admin.blogs.index', compact('blogs'));
     }
 
@@ -50,19 +50,18 @@ class BlogController extends Controller
 
         unset($data['date']); //delete licence_expired_date array value
 
-        $data['date'] = date("Y-m-d", strtotime($request->date)); //set value again 
+        $data['date'] = date("Y-m-d", strtotime($request->date)); //set value again
 
         $blog = Blog::create($data);
 
-        if(!empty($data['title_image']))
-        {
+        if (!empty($data['title_image'])) {
             $file = $data['title_image'];
 
-            $file_name = time().'.'.$file->getClientOriginalExtension();
+            $file_name = time() . '.' . $file->getClientOriginalExtension();
 
             $data['title_image'] = $file_name;
 
-            $data['path'] = $file->storeAs('public/blogs/'.$blog->id, $file_name);
+            $data['path'] = $file->storeAs('public/blogs/' . $blog->id, $file_name);
 
             $blog->update($data);
         }
@@ -90,7 +89,7 @@ class BlogController extends Controller
     public function edit(Blog $blog)
     {
         $specialists = Specialist::all();
-        
+
         return view('admin.blogs.edit', compact('blog', 'specialists'));
     }
 
@@ -109,26 +108,24 @@ class BlogController extends Controller
 
         unset($data['date']); //delete licence_expired_date array value
 
-        $data['date'] = date("Y-m-d", strtotime($request->date)); //set value again 
+        $data['date'] = date("Y-m-d", strtotime($request->date)); //set value again
 
-        $blog->update($data);//update the record
+        $blog->update($data); //update the record
 
-        if(!empty($data['title_image']))
-        {
-            $file = "public/blogs/".$blog->id."/".$blog->title_image;//get existing file path
+        if (!empty($data['title_image'])) {
+            $file = "public/blogs/" . $blog->id . "/" . $blog->title_image; //get existing file path
 
-            Storage::delete($file);//delete existing file
+            Storage::delete($file); //delete existing file
 
             $file = $data['title_image'];
 
-            $file_name = time().'.'.$file->getClientOriginalExtension();//change file name
+            $file_name = time() . '.' . $file->getClientOriginalExtension(); //change file name
 
             $data['title_image'] = $file_name;
 
-            $data['path'] = $file->storeAs('public/blogs/'.$blog->id, $file_name);//upload file to the server
+            $data['path'] = $file->storeAs('public/blogs/' . $blog->id, $file_name); //upload file to the server
 
             $blog->update($data);
-
         }
 
         return redirect()->route('admin.blogs.index')->with('success', 'Ok, Successfully inserted.');
@@ -142,10 +139,10 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        $folder = 'public/blogs/'.$blog->id;
+        $folder = 'public/blogs/' . $blog->id;
 
-        Storage::deleteDirectory($folder);;//delete existing file
-        
+        Storage::deleteDirectory($folder);; //delete existing file
+
         $blog->delete();
 
         return redirect()->route('admin.blogs.index')->with('success', 'Ok, Successfully Deleted.');

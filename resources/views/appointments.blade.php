@@ -70,7 +70,7 @@
                             <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div class="block-18 p-5 bg-light">
                                     <div class="text">
-                                        <strong class="number" data-number="30">0</strong>
+                                        <strong class="number" data-number="20">0</strong>
                                         <span>Years of Experienced</span>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@
                             <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div class="block-18 p-5 bg-light">
                                     <div class="text">
-                                        <strong class="number" data-number="4500">0</strong>
+                                        <strong class="number" data-number="30000">0</strong>
                                         <span>Happy Patients</span>
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@
                             <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div class="block-18 p-5 bg-light">
                                     <div class="text">
-                                        <strong class="number" data-number="25">0</strong>
+                                        <strong class="number" data-number="12">0</strong>
                                         <span>Number of Doctors</span>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                             <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
                                 <div class="block-18 p-5 bg-light">
                                     <div class="text">
-                                        <strong class="number" data-number="70">0</strong>
+                                        <strong class="number" data-number="30">0</strong>
                                         <span>Number of Staffs</span>
                                     </div>
                                 </div>

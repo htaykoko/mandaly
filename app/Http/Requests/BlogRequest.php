@@ -28,7 +28,7 @@ class BlogRequest extends FormRequest
             'title' => ['required'],
             'body' => ['required'],
             'specialist_id' => ['nullable'],
-            'title_image' => ['nullable'],
+            'title_image' => ['nullable', 'mimes:jpg,jpeg,png,bmp', 'max:20000'],
             'file_name' => ['nullable'],
             'file_path' => ['nullable'],
         ];

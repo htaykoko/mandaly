@@ -4,7 +4,7 @@
         <title>Mandalay Hospital</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         @include('layouts.css')
 
         @yield('css_file')
@@ -26,25 +26,13 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
-                    @endauth 
+                    @endauth
                 </p>
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a href="{{ route("home") }}" class="nav-link pl-0">home</a></li>
-                        <li class="nav-item"><a href="{{ route("about") }}" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="{{ route("doctors") }}" class="nav-link">Doctor</a></li>
-                        <li class="nav-item"><a href="{{ route("services") }}" class="nav-link">Service</a></li>
-                        <li class="nav-item"><a href="{{ route("pricing") }}" class="nav-link">Pricing</a></li>
-                        <li class="nav-item"><a href="{{ route("blogs.index") }}" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="{{ route("contact") }}" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a href="{{ route("history") }}" class="nav-link">History</a></li>
-                    </ul>
-                </div>
             </div>
         </nav>
         <!-- END nav -->
         @include('layouts.message')
-        
+
         @yield('content')
 
         <!-- loader -->

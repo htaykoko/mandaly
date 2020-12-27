@@ -13,15 +13,12 @@
                 <div class="card">
                     <div class="card-header">
                         {{ __('Appointments List') }}
-                        <span class="float-right">
-                            {{-- <button class="btn btn-success"><a href="{{ route("admin.specialist.create") }}"> + New</a></button> --}}
-                        </span>
                     </div>
-    
+
                     <div class="card-body">
-                        
+
                         <div class="table table-responsive">
-    
+
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -44,14 +41,14 @@
                                             <td class="">{{ optional($appointment->specialist)->name }}</td>
                                             <td class="">{{ $appointment->phone_no }}</td>
                                             <td class="">{{ $appointment->message }}</td>
-                                           
+
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
-    
+
                         </div>
-    
+
                     </div>
                     <div class="card-footer">
                         {{$appointments->links()}}

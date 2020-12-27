@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-	
+
 
 	<section class="hero-wrap hero-wrap-2" style="background-image: url({{ asset('assets/images/bg_1.jpg') }});" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -14,61 +14,14 @@
 			</div>
 		</div>
 	</section>
-	<div class="container">		
+	<div class="container">
 		<section class="ftco-section ftco-departments bg-light">
 			<div class="container">
-				{{-- <div class="row departments p-5 mb-5 bg-white">
-					<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
-						<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-3.jpg);"></div>
-					</div>
-					<div class="col-md-8">
-						<h2>Dental Deparments</h2>
-						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-						<div class="row mt-5 pt-2">
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
-									<div class="text">
-										<h3>Primary Care</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
-									<div class="text">
-										<h3>Lab Test</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
-									<div class="text">
-										<h3>Symptom Check</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
-									<div class="text">
-										<h3>Heart Rate</h3>
-										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> --}}
+
 				<div class="row justify-content-center my-5 pb-2">
 					<div class="col-md-8 text-center heading-section ftco-animate">
 						<span class="subheading">Pricing</span>
 						<h2 class="mb-4">Our Pricing</h2>
-						<p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
 					</div>
 				</div>
 				<div class="row">
@@ -78,8 +31,32 @@
 								<h3 class="mb-4">Basic</h3>
 								<p><span class="price">$24.50</span> <span class="per">/ session</span></p>
 							</div>
-							<span class="block-25" style="background-image: url({{ asset('assets/images/image_1.jpg') }});"></span>
-							{{-- <p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
+                            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{{ asset('assets/images/image_4.jpg') }}" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
 						</div>
 					</div>
 					<div class="col-md-6 ftco-animate mb-5">
@@ -88,15 +65,32 @@
 								<h3 class="mb-4">Standard</h3>
 								<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
 							</div>
-							<span class="block-25" style="background-image: url({{ asset('assets/images/image_2.jpg') }});"></span>
-							{{--<ul>
-								<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-							</ul>
-							 <p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ asset('assets/images/image_1.jpg') }}" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
 						</div>
 					</div>
 					<div class="col-md-6 ftco-animate">
@@ -105,15 +99,32 @@
 								<h3 class="mb-4">Premium</h3>
 								<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
 							</div>
-							<span class="block-25" style="background-image: url({{ asset('assets/images/image_3.jpg') }});"></span>
-							{{--<ul>
-								<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-							</ul>
-							<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
+                            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="{{ asset('assets/images/image_1.jpg') }}" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
 						</div>
 					</div>
 					<div class="col-md-6 ftco-animate">
@@ -122,15 +133,32 @@
 								<h3 class="mb-4">Platinum</h3>
 								<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
 							</div>
-							<span class="block-25" style="background-image: url({{ asset('assets/images/image_4.jpg') }});"></span>
-							{{-- <ul>
-								<li>Diagnostic Services</li>
-								<li>Professional Consultation</li>
-								<li>Tooth Implants</li>
-								<li>Surgical Extractions</li>
-								<li>Teeth Whitening</li>
-							</ul>
-							<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p> --}}
+                            <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="{{ asset('assets/images/image_4.jpg') }}" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
 						</div>
 					</div>
 				</div>

@@ -105,11 +105,11 @@
                             </div>
                         </div>
                         <div class="d-md-flex">
-                            <div class="form-group ml-md-4">
-                                <input type="submit" value="Update" class="btn btn-secondary py-3 px-4">
+                            <div class="form-group ml-md-4 my-2">
+                                <input type="submit" value="Update" class="btn btn-secondary ">
                             </div>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>

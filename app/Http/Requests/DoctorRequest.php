@@ -31,7 +31,7 @@ class DoctorRequest extends FormRequest
             'licence_expired_date' => ['required', 'date'],
             'start_time' => ['required'],
             'end_time' => ['required'],
-            'image_name' => ['nullable'],
+            'image_name' => ['required', 'mimes:jpg,jpeg,png,bmp', 'max:20000'],
             'image_path' => ['nullable'],
             'age' => ['required', 'integer'],
             'specialist_id' => ['required', 'integer'],

@@ -24,10 +24,10 @@
                                 <input type="text" class="form-control" placeholder="Remark" name="remark">
                             </div>
                         </div>
-                        
+
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <input type="submit" value="Create" class="btn btn-secondary py-3 px-4">
+                                <input type="submit" value="Create" class="btn btn-secondary">
                             </div>
                         </div>
                     </form>

@@ -14,14 +14,14 @@
                     <div class="card-header">
                         {{ __('Doctors List') }}
                         <span class="float-right">
-                            <button class="btn btn-success"><a href="{{ route("admin.specialist.create") }}"> + New</a></button>
+                            <button class="btn btn-success"><a href="{{ route("admin.specialist.create") }}" class="p-3 text-dark"> + New</a></button>
                         </span>
                     </div>
-    
+
                     <div class="card-body">
-                        
+
                         <div class="table table-responsive">
-    
+
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -51,9 +51,9 @@
                                     @endforeach
                                 </tbody>
                             </table>
-    
+
                         </div>
-    
+
                     </div>
                     <div class="card-footer">
                         {{$specialists->links()}}

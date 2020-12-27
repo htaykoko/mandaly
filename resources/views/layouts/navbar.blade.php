@@ -8,21 +8,21 @@
                 <div class="row d-flex">
                     <div class="col-md-4 pr-4 d-flex topper align-items-center">
                         <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
-                        <span class="text">Address: 198 West 21th Street, Suite 721 New York NY 10016</span>
+                        <span class="text">Address: 14/40- 2th Street, Shwe Gyi Quarter, Pyinmana</span>
                     </div>
                     <div class="col-md pr-4 d-flex topper align-items-center">
                         <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                        <span class="text">Email: youremail@email.com</span>
+                        <span class="text">Email: info@mandalaypgh.com</span>
                     </div>
                     <div class="col-md pr-4 d-flex topper align-items-center">
                         <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                        <span class="text">Phone: + 1235 2355 98</span>
+                        <span class="text">Phone: + 959 974228857</span>
                     </div>
                     @if (Route::has('login'))
                         @auth
                             <div class="col-md pr-4 d-flex topper align-items-center">
                                 <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-user"></span></div>
-                                
+
                                 <div class="top-right links">
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -48,14 +48,14 @@
         <p class="button-custom order-lg-last mb-0"><a href="{{ route("appointment") }}" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a href="{{ route("home") }}" class="nav-link pl-0">home</a></li>
-                <li class="nav-item"><a href="{{ route("about") }}" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="{{ route("doctors") }}" class="nav-link">Doctor</a></li>
-                <li class="nav-item"><a href="{{ route("services") }}" class="nav-link">Service</a></li>
-                <li class="nav-item"><a href="{{ route("pricing") }}" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="{{ route("blogs.index") }}" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="{{ route("contact") }}" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="{{ route("history") }}" class="nav-link">History</a></li>
+                <li class="nav-item {{ active_segment(1, 'home') }}"><a href="{{ route("home") }}" class="nav-link pl-0">home</a></li>
+                <li class="nav-item {{ active_segment(1, 'about') }}"><a href="{{ route("about") }}" class="nav-link">About</a></li>
+                <li class="nav-item {{ active_segment(1, 'doctors') }}"><a href="{{ route("doctors") }}" class="nav-link">Doctor</a></li>
+                <li class="nav-item {{ active_segment(1, 'services') }}"><a href="{{ route("services") }}" class="nav-link">Service</a></li>
+                <li class="nav-item {{ active_segment(1, 'pricing') }}"><a href="{{ route("pricing") }}" class="nav-link">Pricing</a></li>
+                <li class="nav-item {{ active_segment(1, 'blogs') }}"><a href="{{ route("blogs.index") }}" class="nav-link">Blog</a></li>
+                <li class="nav-item {{ active_segment(1, 'contact') }}"><a href="{{ route("contact") }}" class="nav-link">Contact</a></li>
+                <li class="nav-item {{ active_segment(1, 'history') }}"><a href="{{ route("history") }}" class="nav-link">History</a></li>
             </ul>
         </div>
     </div>

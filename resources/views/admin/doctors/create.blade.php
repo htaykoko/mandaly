@@ -18,10 +18,10 @@
                         @method('POST')
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name" name="name">
+                                <input type="text" class="form-control" placeholder="Name" name="name" value="{{ old("name") }}">
                             </div>
                             <div class="form-group ml-md-4">
-                                <input type="text" class="form-control" placeholder="Degree" name="degree">
+                                <input type="text" class="form-control" placeholder="Degree" name="degree" value="{{ old("degree") }}">
                             </div>
                         </div>
                         <div class="d-md-flex">
@@ -29,14 +29,14 @@
                                 <div class="form-field">
                                     <div class="select-wrap">
                                         <div class="icon"><span class="ion-ios-phone-portrait"></span></div>
-                                        <input type="text" class="form-control" placeholder="Phone" name="mobile">
+                                        <input type="text" class="form-control" placeholder="Phone" name="mobile" value="{{ old("mobile") }}">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group ml-md-4">
                                 <div class="select-wrap">
                                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                    <input type="text" class="form-control" placeholder="Licence No" name="licence_no">
+                                    <input type="text" class="form-control" placeholder="Licence No" name="licence_no" value="{{ old("licence_no") }}">
                                 </div>
                             </div>
                         </div>
@@ -44,13 +44,13 @@
                             <div class="form-group">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="ion-ios-calendar"></span></div>
-                                    <input type="text" class="appointment_date form-control" placeholder="Licence Expired Date" name="licence_expired_date">
+                                    <input type="text" class="appointment_date form-control" placeholder="Licence Expired Date" name="licence_expired_date" value="{{ old("licence_expired_date") }}">
                                 </div>
                             </div>
                             <div class="form-group ml-md-4">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="ion-md-calendar"></span></div>
-                                    <input type="number" class="form-control" placeholder="Age" name="age" min="0">
+                                    <input type="number" class="form-control" placeholder="Age" name="age" min="0" value="{{ old("age") }}">
                                 </div>
                             </div>
                         </div>
@@ -89,15 +89,15 @@
                                 <div class="col-md-10">
                                     <div class="icon"><span class="ion-ios-text"></span></div>
                                     <div class="select-wrap">
-                                        <textarea name="remark" id="" cols="30" rows="5" class="form-control" placeholder="remark"></textarea>
+                                        <textarea name="remark" id="" cols="30" rows="5" class="form-control" placeholder="remark">{{ old("remark") }}</textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="d-md-flex">
                             <div class="form-group ml-md-4 justify-content-center">
-                                <div class="input-wrap">
-                                    <input type="submit" value="Create" class="btn btn-secondary px-4 py-2">
+                                <div class="input-wrap my-2">
+                                    <input type="submit" value="Create" class="btn btn-secondary ">
                                 </div>
                             </div>
                         </div>

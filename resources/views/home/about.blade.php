@@ -1,4 +1,4 @@
-    
+
     <section class="ftco-services ftco-no-pb">
         <div class="container">
             <div class="row no-gutters">
@@ -11,7 +11,7 @@
                             <h3 class="heading">Qualitfied Doctors</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
-                    </div>      
+                    </div>
                 </div>
                 <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
                     <div class="media block-6 d-block text-center">
@@ -22,7 +22,7 @@
                             <h3 class="heading">Internal Pharmacy</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
                     <div class="media block-6 d-block text-center">
@@ -30,10 +30,10 @@
                             <span class="flaticon-stethoscope"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Outdoor Checkup</h3>
+                            <h3 class="heading">Laboratory</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
-                    </div>      
+                    </div>
                 </div>
                 <div class="col-md-3 d-flex services align-self-stretch p-4 ftco-animate">
                     <div class="media block-6 d-block text-center">
@@ -44,7 +44,7 @@
                             <h3 class="heading">24 Hours Service</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
-                    </div>      
+                    </div>
                 </div>
             </div>
         </div>

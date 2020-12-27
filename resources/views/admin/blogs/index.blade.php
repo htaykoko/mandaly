@@ -13,15 +13,15 @@
                 <div class="card">
                     <div class="card-header">
                         {{ __('Blogs List') }}
-                        <span class="float-right">
-                            <button class="btn btn-success"><a href="{{ route("admin.blogs.create") }}"> + Post</a></button>
-                        </span>
+                        <div class="float-right">
+                            <button class="btn btn-success"><a href="{{ route("admin.blogs.create") }}" class="p-3 text-dark"> + New</a></button>
+                        </div>
                     </div>
-    
+
                     <div class="card-body">
-                        
+
                         <div class="table table-responsive">
-    
+
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -43,7 +43,7 @@
                                             <td class="">{{ $blog->title_image }}</td>
                                             <td>
                                                 <a href="{{ route("admin.blogs.edit", ["blog" => $blog]) }}" class="btn btn-md btn-info">Edit</a>
-                                                
+
                                             </td>
                                             <td>
                                                 <form action="{{ route("admin.blogs.destroy", ["blog" => $blog])}}" method="POST">
@@ -56,9 +56,9 @@
                                     @endforeach
                                 </tbody>
                             </table>
-    
+
                         </div>
-    
+
                     </div>
                     <div class="card-footer">
                         {{$blogs->links()}}
