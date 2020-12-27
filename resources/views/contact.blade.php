@@ -29,7 +29,10 @@
                     </div>
                     <div class="col-md-3 d-flex">
                         <div class="bg-light d-flex align-self-stretch box p-4">
-                            <p><span>Phone:</span> <a href="tel://+959974228857">+ 959 974228857</a></p>
+                            <p>
+                                <span>Phone:</span> <a href="tel://+959974228857">+ 959 97285 7586</a>
+                                <span>Phone:</span> <a href="tel://+95 06721042">+ 95 067 21042</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-3 d-flex">

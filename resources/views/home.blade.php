@@ -7,7 +7,7 @@
         @include('home.carousel')
 
         {{-- services --}}
-        @include('home.about')
+        {{-- @include('home.about') --}}
         <br>
         {{-- free consultation --}}
         <section class="ftco-intro" style="background-image: url({{ asset('assets/images/bg_3.jpg') }});" data-stellar-background-ratio="0.5">

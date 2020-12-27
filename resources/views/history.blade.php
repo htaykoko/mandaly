@@ -24,6 +24,13 @@
                     </div>
                 </div>
             </section>
+            <section class="ftco-section">
+                <div class="row justify-content-center mb-5 pb-2">
+                    <div class="col-md-8 text-center heading-section ftco-animate">
+                       <img src="{{ asset("assets/images/owner/hospital.jpg") }}" class="d-block w-100" alt="hospital image">
+                    </div>
+                </div>
+            </section>
         </div>
 
     </div>

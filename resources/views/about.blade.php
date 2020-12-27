@@ -18,7 +18,7 @@
         <section class="ftco-section ftco-no-pt ftc-no-pb">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url({{ asset('assets/images/about.jpg') }});"></div>
+                    <div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url({{ asset('assets/images/owner/image.jpg') }})"></div>
                     <div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
                         <div class="heading-section mb-5">
                             <div class="pl-md-5 ml-md-5">
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div class="pl-md-5 ml-md-5 mb-5">
-                            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+                            {{-- <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p> --}}
                             <div class="row mt-5 pt-2">
                                 <div class="col-lg-6">
                                     <div class="services-2 d-flex">

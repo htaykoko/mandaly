@@ -28,8 +28,8 @@
 					<div class="col-md-6 ftco-animate mb-5">
 						<div class="pricing-entry pb-5 text-center">
 							<div>
-								<h3 class="mb-4">Basic</h3>
-								<p><span class="price">$24.50</span> <span class="per">/ session</span></p>
+								<h3 class="mb-2">Basic</h3>
+								<p><span class="price">20000 MMK</span> <span class="per">/ Day</span></p>
 							</div>
                             <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -39,13 +39,13 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('assets/images/image_4.jpg') }}" alt="First slide">
+                                        <img class="d-block w-100" src="{{ asset("assets/images/owner/20000-room/1.jpg") }}" alt="First slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="Second slide">
+                                        <img class="d-block w-100" src="{{ asset("assets/images/owner/20000-room/2.jpg") }}" alt="Second slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="Third slide">
+                                        <img class="d-block w-100" src="{{ asset("assets/images/owner/20000-room/3.jpg") }}" alt="Third slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -62,8 +62,8 @@
 					<div class="col-md-6 ftco-animate mb-5">
 						<div class="pricing-entry pb-5 text-center">
 							<div>
-								<h3 class="mb-4">Standard</h3>
-								<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
+								<h3 class="mb-2">Standard</h3>
+								<p><span class="price">25000 MMK</span> <span class="per">/ day</span></p>
 							</div>
                             <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -73,13 +73,13 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="First slide">
+                                        <img class="d-block w-100" src="{{ asset("assets/images/owner/25000-room/1.1.jpg") }}" alt="First slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="Second slide">
+                                        <img class="d-block w-100" src="{{ asset("assets/images/owner/25000-room/2.jpg") }}" alt="Second slide">
                                     </div>
                                     <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('assets/images/image_1.jpg') }}" alt="Third slide">
+                                        <img class="d-block w-100" src="{{ asset("assets/images/owner/25000-room/3.jpg") }}" alt="Third slide">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -87,74 +87,6 @@
                                     <span class="sr-only">Previous</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-						</div>
-					</div>
-					<div class="col-md-6 ftco-animate">
-						<div class="pricing-entry active pb-5 text-center">
-							<div>
-								<h3 class="mb-4">Premium</h3>
-								<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
-							</div>
-                            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="d-block w-100" src="{{ asset('assets/images/image_1.jpg') }}" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="Third slide">
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-						</div>
-					</div>
-					<div class="col-md-6 ftco-animate">
-						<div class="pricing-entry pb-5 text-center">
-							<div>
-								<h3 class="mb-4">Platinum</h3>
-								<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
-							</div>
-                            <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="d-block w-100" src="{{ asset('assets/images/image_2.jpg') }}" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('assets/images/image_3.jpg') }}" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{ asset('assets/images/image_4.jpg') }}" alt="Third slide">
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                 </a>

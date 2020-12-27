@@ -16,7 +16,7 @@
                     </div>
                     <div class="col-md pr-4 d-flex topper align-items-center">
                         <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                        <span class="text">Phone: + 959 974228857</span>
+                        <span class="text">Phone: + 959 972857586</span>
                     </div>
                     @if (Route::has('login'))
                         @auth

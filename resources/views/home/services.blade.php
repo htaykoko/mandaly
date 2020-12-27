@@ -128,7 +128,7 @@
                             <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
                                 <div class="row departments">
                                     <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
-                                        <div class="img d-flex align-self-stretch" style="background-image: url({{ asset('assets/images/dept-3.jpg') }});"></div>
+                                        <div class="img d-flex align-self-stretch" style="background-image: url({{ asset('assets/images/owner/image2.jpg') }});"></div>
                                     </div>
                                     <div class="col-md-8">
                                         <h2>သားဖွားမီးယပ် ဌါန</h2>
@@ -178,7 +178,7 @@
                             <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
                                 <div class="row departments">
                                     <div class="col-lg-4 order-lg-last d-flex align-items-stretch">
-                                        <div class="img d-flex align-self-stretch" style="background-image: url({{ asset('assets/images/dept-4.jpg') }});"></div>
+                                        <div class="img d-flex align-self-stretch" style="background-image: url({{ asset('assets/images/owner/image1.jpg') }});"></div>
                                     </div>
                                     <div class="col-md-8">
                                         <h2>အထွေထွေရောဂါကု ဌါန</h2>
