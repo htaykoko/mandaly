@@ -42,12 +42,11 @@ class AppointmentController extends Controller
 
         unset($data['appointment_date']); //delete appointment date array value
 
-        $data['appointment_date'] = date("Y-m-d", strtotime($request->appointment_date)); //set value again 
+        $data['appointment_date'] = date("Y-m-d", strtotime($request->appointment_date)); //set value again
 
         Appointment::create($data);
 
         return redirect()->route('appointment')->with('success', 'Ok, your message have been sent.');
-        
     }
 
     /**
@@ -93,5 +92,10 @@ class AppointmentController extends Controller
     public function destroy(Appointment $appointment)
     {
         //
+    }
+
+    public function maps()
+    {
+        return view("map");
     }
 }

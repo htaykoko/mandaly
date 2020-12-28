@@ -21,17 +21,13 @@
                                     <h3 class="heading"><a href="{{ route('blogs.show', $blog) }}">{{ $blog->title }}</a></h3>
                                     <div class="d-flex align-items-center mt-4">
                                         <p class="mb-0"><a href="{{ route('blogs.show', $blog) }}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                                        {{-- <p class="ml-auto mb-0">
-                                            <span href="#" class="mr-2">Admin</span>
-                                            <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                                        </p> --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     @endforeach
-
                 </div>
+                {{ $blogs->links() }}
             </div>
         </section>
     </div>

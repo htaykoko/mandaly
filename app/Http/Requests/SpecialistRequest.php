@@ -25,7 +25,7 @@ class SpecialistRequest extends FormRequest
     {
         return [
             'name' => ['required'],
-            'remark' => ['nullable']
+            'remark' => ['required']
         ];
     }
 }

@@ -24,6 +24,8 @@ Route::get('/appointment', 'AppointmentController@index')->name('appointment');
 
 Route::post('/appointment', 'AppointmentController@store')->name('appointments.store');
 
+Route::get('/maps', 'AppointmentController@maps');
+
 // admin page
 Route::middleware(['auth'])->prefix('admin')->group(function () {
 
@@ -36,5 +38,4 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::resource('blogs', 'Admin\BlogController', ['as' => 'admin']);
 
     Route::resource('appointments', 'Admin\AppointmentController', ['as' => 'admin']);
-
 });
