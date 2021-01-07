@@ -49,7 +49,7 @@ class DoctorController extends Controller
 
         unset($data['licence_expired_date']); //delete licence_expired_date array value
 
-        $data['licence_expired_date'] = date("Y-m-d", strtotime($request->licence_expired_date)); //set value again 
+        $data['licence_expired_date'] = date("Y-m-d", strtotime($request->licence_expired_date)); //set value again
 
         $doctor = Doctor::create($data);
 
@@ -58,7 +58,7 @@ class DoctorController extends Controller
             $imagePath = request('image_name')->store('doctors', 'public');
 
             $image = Image::make(public_path("storage/{$imagePath}"))->fit(700, 700);
-            
+
             // $image->save();
 
             $imageArray = ['image_path' => $imagePath, 'image_name' => $image];
@@ -66,11 +66,9 @@ class DoctorController extends Controller
             $imageArray = array_merge($imageArray, ['image_name' => $image->basename]);
 
             $doctor->update($imageArray);
-
         }
 
         return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully inserted.');
-
     }
 
     /**
@@ -112,18 +110,18 @@ class DoctorController extends Controller
 
         unset($data['licence_expired_date']); //delete licence_expired_date array value
 
-        $data['licence_expired_date'] = date("Y-m-d", strtotime($request->licence_expired_date)); //set value again 
+        $data['licence_expired_date'] = date("Y-m-d", strtotime($request->licence_expired_date)); //set value again
 
         if (request('image_name')) {
 
-            $file = "public/doctors/".$doctor->image_name;//get existing file path
+            $file = "public/doctors/" . $doctor->image_name; //get existing file path
 
-            Storage::delete($file);//delete existing file
+            Storage::delete($file); //delete existing file
 
             $imagePath = request('image_name')->store('doctors', 'public');
 
             $image = Image::make(public_path("storage/{$imagePath}"))->fit(300, 300);
-            
+
             $image->save();
 
             $imageArray = ['image_path' => $imagePath];
@@ -147,16 +145,14 @@ class DoctorController extends Controller
      */
     public function destroy(Doctor $doctor)
     {
-        if($doctor->image_name)
-        {
-            $file = "public/{$doctor->image_path}";//get existing file path
+        if ($doctor->image_name) {
+            $file = "public/{$doctor->image_path}"; //get existing file path
 
-            Storage::delete($file);//delete existing file
+            Storage::delete($file); //delete existing file
         }
 
         $doctor->delete();
-        
-        return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully Deleted.');
 
+        return redirect()->route('admin.doctors.index')->with('success', 'Ok, Successfully Deleted.');
     }
 }
